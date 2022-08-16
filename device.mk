@@ -85,10 +85,6 @@ PRODUCT_PACKAGES += \
     AntHalService-Soong \
     com.dsi.ant@1.0.vendor
 
-# AOSiP Device Settings
-PRODUCT_PACKAGES += \
-    DeviceSettings
-
 # Atrace
 PRODUCT_PACKAGES += \
     android.hardware.atrace@1.0-service
@@ -157,6 +153,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
+# AOSiP Device Settings
+PRODUCT_PACKAGES += \
+    DeviceSettings
+
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
@@ -178,10 +179,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     OnePlusCameraHelper
-
-# Charge control
-PRODUCT_PACKAGES += \
-    vendor.kscope.chgctrl@1.0-service.oneplus7pro
 
 # Component overrides
 PRODUCT_COPY_FILES += \
@@ -437,7 +434,8 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/oneplus
 
 # Telephony
 PRODUCT_PACKAGES += \
@@ -461,7 +459,9 @@ PRODUCT_PACKAGES += \
 
 # tri-state key
 PRODUCT_PACKAGES += \
-    tri-state-key_daemon
+    KeyHandler \
+    tri-state-key_daemon \
+    tri-state-key_daemon.vendor
 
 # Update engine
 PRODUCT_PACKAGES += \

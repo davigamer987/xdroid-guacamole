@@ -719,4 +719,18 @@
          we only enabled it while the device has ability of mixed color spaces composition -->
     <bool name="config_enableWcgMode">true</bool>
 
+    <!-- Paths to the libraries that contain device specific key handlers -->
+    <string-array name="config_deviceKeyHandlerLibs" translatable="false">
+        <item>/system/system_ext/priv-app/LineageParts/LineageParts.apk</item>
+        <item>/system/system_ext/priv-app/DeviceSettings/DeviceSettings.apk</item>
+        <item>/system/priv-app/OnePlusCameraHelper/OnePlusCameraHelper.apk</item>
+    </string-array>
+
+    <!-- Names of the key handler classes -->
+    <string-array name="config_deviceKeyHandlerClasses" translatable="false">
+        <item>org.lineageos.lineageparts.gestures.KeyHandler</item>
+        <item>org.lineageos.device.DeviceSettings.KeyHandler</item>
+        <item>org.lineageos.camerahelper.KeyHandler</item>
+    </string-array>
+
 </resources>

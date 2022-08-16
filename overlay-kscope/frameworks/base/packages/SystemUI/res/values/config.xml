@@ -31,10 +31,10 @@
             0 - GLOBAL HBM
             1 - LOCAL HBM
     -->
-    <integer name="config_udfpsHbmType">0</integer>
+    <integer name="config_udfps_hbm_type">0</integer>
 
     <!-- Dummy udfps vendor code -->
-    <integer name="config_udfpsVendorCode">42</integer>
+    <integer name="config_udfps_vendor_code">42</integer>
 
     <!-- Allow devices override audio panel location to the left side -->
     <bool name="config_audioPanelOnLeftSide">true</bool>
